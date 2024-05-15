@@ -1,2 +1,2 @@
 #!/bin/bash
-output="${CFILE%.c}.s" | gcc -S $CFILE -o $output
+output="${CFILE%.c}.s" | gcc -s $CFILE -o $output
