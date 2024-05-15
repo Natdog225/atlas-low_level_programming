@@ -1,2 +1,2 @@
 #!/bin/bash
-Cfile="$1" | OUTPUT_FILE="c" | cpp "$CFILE" > "$OUTPUT_FILE"
+gcc -E -o c $CFILE
