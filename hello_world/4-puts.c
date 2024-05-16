@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * Main: This is a comment for the function of main
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
