@@ -1,10 +1,8 @@
 #include <stdio.h>
+/**
+ * Main: This is a comment for the function of main
+ */
 int main(void)
-	/**
-	 * Main: is the proper way to start
-	 * This thing uses the puts command
-	 * Check this out
-	 */
 {
 	puts("\"Programming is like building a multilingual puzzle");
 
