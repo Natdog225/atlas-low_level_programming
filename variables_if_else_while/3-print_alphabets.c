@@ -10,11 +10,8 @@ for (size_t i = 0; letters[i]!= '\0'; i++)
 {
 putchar(letters[i]);
 }
-putchar(' ');
-for (size_t i = 0; letters[i]!= '\0'; i++)
 {
-putchar(letters[i]);
-}
 putchar('\n');
+}
 return (0);
 }
