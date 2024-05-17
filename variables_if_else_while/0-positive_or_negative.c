@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * Main: Entry point
+ * This code lets you know what numbers are positve, negative or zero
+ * Main - Entry point
  *
  * Return:(0) - Successful
  */
