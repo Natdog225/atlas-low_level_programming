@@ -1,17 +1,27 @@
 #include <stdio.h>
-/**
- * main - function and entry point
- * Return: Always 0 (success)
- */
+
 int main(void)
 {
-char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-for (size_t i = 0; letters[i]!= '\0'; i++)
+char* lower = "abcdefghijklmnopqrstuvwxyz";
+char* upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+int i = 0;
+while (lower[i]!= '\0')
+    {
+        putchar(lower[i]);
+        i++;
+    }
+
+putchar(' ');
+i = 0;
+while (upper[i]!= '\0')
 {
-putchar(letters[i]);
+putchar(upper[i]);
+i++;
 }
-{
+
 putchar('\n');
+
+	return (0);
 }
-return (0);
-}
+
