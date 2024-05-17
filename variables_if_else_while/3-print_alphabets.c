@@ -5,12 +5,15 @@
  */
 int main(void)
 {
-for (char c = 'a'; c <= 'z'; c++)
+char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+for (size_t i = 0; letters[i]!= '\0'; i++)
+{
+putchar(letters[i]);
 }
 putchar(' ');
-for (char c = 'A'; c <= 'Z'; c++)
+for (size_t i = 0; letters[i]!= '\0'; i++)
 {
-putchar(c);
+putchar(letters[i]);
 }
 putchar('\n');
 return (0);
