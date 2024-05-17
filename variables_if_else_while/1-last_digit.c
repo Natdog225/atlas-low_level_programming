@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+/**
+ * main - function or entry point
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 int n;
@@ -15,11 +18,11 @@ int n;
 	}
 	else if (n % 10 == 0)
 	{
-	    printf("%d and is 0\n", n % 10);
+	printf("%d and is 0\n", n % 10);
 	}
 	else
 	{
-	    printf("%d and is less than 6 and not 0\n", n % 10);
+	printf("%d and is less than 6 and not 0\n", n % 10);
 	}
 	return (0);
 }
