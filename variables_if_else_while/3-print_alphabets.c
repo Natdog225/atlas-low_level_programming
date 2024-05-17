@@ -2,23 +2,16 @@
 
 int main(void)
 {
-char* lower = "abcdefghijklmnopqrstuvwxyz";
-char* upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char* alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 int i = 0;
-while (lower[i]!= '\0')
-    {
-        putchar(lower[i]);
-        i++;
-    }
-
-putchar(' ');
-i = 0;
-while (upper[i]!= '\0')
+while (alphabet[i]!= '\0')
 {
-putchar(upper[i]);
+putchar(alphabet[i]);
 i++;
 }
+
+putchar(' ');
 
 putchar('\n');
 
