@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * 0-positive_or_negative.c: This code lets you know what numbers are positive, negative or zero
+ * 0-positive_or_negative.c:what numbers are positive, negative or zero
  * main: Entry point
  *
  * Return:(0) - Successful
