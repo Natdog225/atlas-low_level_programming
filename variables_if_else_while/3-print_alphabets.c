@@ -2,10 +2,10 @@
 
 int main(void)
 {
-char* alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
+char *alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 
 int i = 0;
-while (alphabet[i]!= '\0')
+while (alphabet[i] != '\0')
 {
 putchar(alphabet[i]);
 i++;
