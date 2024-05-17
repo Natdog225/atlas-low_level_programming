@@ -2,7 +2,7 @@
 
 int main(void)
 {
-char* alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char* alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 
 int i = 0;
 while (alphabet[i]!= '\0')
