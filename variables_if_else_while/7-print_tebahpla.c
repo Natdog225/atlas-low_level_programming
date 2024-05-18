@@ -1,19 +1,18 @@
 #include <stdio.h>
-#include <string.h>
 /**
- * main - entry point and function
- * return: Always 0 (successful)
+ * main - Entry point and function
+ * Return: Always (0) (successful)
  */
 int main(void)
 {
-char *alphabet = "abcdfghijklmnoprstuvwxyz";
-int i;
+char *alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-i = strlen(alphabet) - 1;
+int i = 25;
+
 while (i >= 0)
 {
 putchar(alphabet[i]);
-i++;
+i--;
 }
 
 
@@ -21,4 +20,3 @@ putchar('\n');
 
 return (0);
 }
-
