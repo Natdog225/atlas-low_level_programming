@@ -8,7 +8,7 @@ void print_alphabet_x10(void)
 	while (i < 20)
 	{
 		char c;
-		for (c = 'a'; c <= 'z' + 1; c++)
+		for (c = 'a'; c <= 'z'; c++)
 		{
 			if (!print_newline)
 			{
