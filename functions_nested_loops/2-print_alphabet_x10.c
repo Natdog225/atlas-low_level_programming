@@ -2,21 +2,25 @@
 
 void print_alphabet_x10(void)
 {
-	int repetitions = 10;
+	int i = 0;
+	int print_newline = 0;
 
-	while (repetitions > 0)
+	while (i < 10)
 	{
-		char c = 'b';
-		_putchar ('a');
-			while (c <= 'z')
+		char c;
+		for (c = 'a'; c <= 'z' + 1; c++)
+		{
+			if (!print_newline)
 			{
 				_putchar(c);
-				c++;
 			}
-		if (repetitions > 1)
-		{
-			_putchar('\n');
+			else
+			{
+				_putchar('\n');
+				break;
+			}
 		}
-		repetitions--;
+		print_newline =!print_newline;
+		i++;
 	}
 }
