@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * main - Function and main entry point
@@ -15,9 +14,4 @@ void print_alphabet(void)
 		c++;
 	}
 	_putchar('\n');
-}
-int main()
-{
-	print_alphabet();
-	return (0);
 }
