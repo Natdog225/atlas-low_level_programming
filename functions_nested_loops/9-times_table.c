@@ -2,8 +2,8 @@
 
 /**
  * Description - this script will do multiplcation tables.
- * times_table - will print out the tables with 9 and all the way to 0.
- * return will be 0.
+ * times_table: will print out the tables with 9 and all the way to 0.
+ * Return: 0.
  */
 
 void times_table(void)
