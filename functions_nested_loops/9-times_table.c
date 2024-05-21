@@ -3,7 +3,7 @@
 /**
  * times_table - will print out the tables with 9 and all the way to 0.
  *
- * Description: This prints stuff 
+ * Description: This prints stuff
  *
  * Return: 0.
  */
