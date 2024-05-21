@@ -1,4 +1,11 @@
 #include "main.h"
+/**
+ * print_alphabet_x10 - Prints the abcs ten times
+ *
+ * Description - what the function says
+ *
+ * Return: 0
+ */
 
 void print_alphabet_x10(void)
 {
