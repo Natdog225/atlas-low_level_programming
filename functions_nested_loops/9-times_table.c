@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * Description - this script will do multiplcation tables.
  * times_table - will print out the tables with 9 and all the way to 0.
+ *
+ * Description: This prints stuff 
+ *
  * Return: 0.
  */
 
