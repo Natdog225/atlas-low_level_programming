@@ -4,7 +4,9 @@
  *
  * _isupper - check desc
  *
- * @c - int used
+ * @c: int used
+ *
+ * Return: 1 if upper, 0 if not
  */
 int _isupper(int c)
 {
