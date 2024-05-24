@@ -6,19 +6,19 @@ int main()
 	for (num = 1; num <= 100; num++)
 	{
 		if (num % 3 == 0 && num % 5 == 0)
-		{printf("Fizzbuzz\n");
+		{printf("Fizzbuzz");
 		}
 		else if (num % 3 == 0)
 		{
-			printf("Fizz\n");
+			printf("Fizz");
 		}
 		else if (num % 5 == 0)
 		{
-			printf("Buzz\n");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d\n", num);
+			printf("%d", num);
 		}
 	}
 	return (0);
