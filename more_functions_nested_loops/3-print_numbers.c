@@ -1,8 +1,6 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * description - it prints numbers
- *
  * print_numbers - this also prints numbers
  *
  * Return: 0

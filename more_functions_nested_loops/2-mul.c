@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * description: Multiplies two ints
- *
- * mul - multiplies
+ * mul - multiplies integers together
  *
  * @a: int no 1
  *

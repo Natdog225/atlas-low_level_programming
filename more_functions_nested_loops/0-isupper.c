@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * Description - Tells if a letter is uppercase
- *
  * _isupper -  check desc
+ *
+ * Description: Checks if letters are uppercase
  *
  * @c: int used
  *

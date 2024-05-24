@@ -1,7 +1,5 @@
 #include "main.h"
 /**
- * Description - Tells you if if the input is a digit
- *
  * _isdigit - tells if its a digit
  *
  * @c: is the int
