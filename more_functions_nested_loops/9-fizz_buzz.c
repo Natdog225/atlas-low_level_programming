@@ -6,15 +6,15 @@ int main()
 	for (num = 1; num <= 100; num++)
 	{
 		if (num % 3 == 0 && num % 5 == 0)
-		{printf("Fizzbuzz");
+		{printf("Fizzbuzz ");
 		}
 		else if (num % 3 == 0)
 		{
-			printf("Fizz");
+			printf("Fizz ");
 		}
 		else if (num % 5 == 0)
 		{
-			printf("Buzz");
+			printf("Buzz ");
 		}
 		else
 		{
