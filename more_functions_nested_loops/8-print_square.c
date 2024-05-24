@@ -4,15 +4,9 @@
  *
  * Description: it prints a square
  *
- * size: the int used
+ * @size: the int used
  *
  * Return: 0
- */
-#include "main.h"
-
-/**
- * print_square - Prints a square of a given size
- * @size: The size of the square
  */
 void print_square(int size)
 {
