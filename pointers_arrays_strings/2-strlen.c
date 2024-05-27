@@ -1,5 +1,5 @@
-#include "main.h";
-#include <stdio.h>;
+#include "main.h"
+#include <stdio.h>
 
 /**
  * _strlen - this will print the length of int
