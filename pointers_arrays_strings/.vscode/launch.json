@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/nathan/Repositories/atlas-low_level_programming/pointers_arrays_strings/.vscode",
+      "program": "/Users/nathan/Repositories/atlas-low_level_programming/pointers_arrays_strings/.vscode/build/Debug/outDebug"
+    }
+  ]
+}
