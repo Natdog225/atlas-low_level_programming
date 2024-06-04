@@ -19,7 +19,7 @@ char *string_toupper(char *str)
 
 	while (*ptr != '\0')
 	{
-		*ptr = toupper((unsigned char)*ptr);
+		*ptr = _toupper((unsigned char)*ptr);
 		ptr++;
 	}
 	return (str);
