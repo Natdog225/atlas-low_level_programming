@@ -7,17 +7,32 @@
  * Return: A pointer to the changed str
  */
 char *cap_string(char *str)
-{
-	int is_word_start = 1;
-	char *p;
-
-	for (p = str; *p; ++p)
 	{
-		if (is_word_start && isalpha(*p))
-		{
-			*p = _toupper(*p);
-		}
-		is_word_start = !isalnum(*p);
+	int index = 0;
+
+	while (str[index])
+	{
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
+
 	return (str);
 }
