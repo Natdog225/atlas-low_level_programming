@@ -7,15 +7,15 @@
  *
  * Return: a pointer to the changed str
  */
-char *string_toupper(char *)
-	char *ptr;
+char *string_toupper(char *str)
 {
+	char *ptr;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	*ptr = str;
+	ptr = str;
 
 	while (*ptr != '\0')
 	{
