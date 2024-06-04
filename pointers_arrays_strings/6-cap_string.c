@@ -17,7 +17,7 @@ char *cap_string(char *str)
 		{
 			*p = _toupper(*p);
 		}
-		is_word_start = isspace(*p);
+		is_word_start = !isalnum(*p);
 	}
 	return (str);
 }
