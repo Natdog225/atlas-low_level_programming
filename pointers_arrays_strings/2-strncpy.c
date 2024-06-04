@@ -1,14 +1,14 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * _strncopy - copies a string
+ * _strncpy - copies a string
  * @dest: Destination
  * @src: Source string
  * @n: Maximum number of bytes
  *
  * Return: pointer to the dest
  */
-char *_strncopy(char *dest, char *src, size_t n)
+char *_strncpy(char *dest, char *src, size_t n)
 {
 	size_t i;
 
