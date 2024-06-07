@@ -1,21 +1,12 @@
 #include "main.h"
 /**
- * _isalpha - checks for the abcs
- * @c: the int to check
- * Return: 1 if it is a letter, 0 if not
+ * _isdigit - tells if its a digit
+ *
+ * @c: is the int
+ *
+ * Return: Always 0
  */
-int _isalpha(int c)
+int _isdigit(int c)
 {
-	if (c >= 97 && c <= 122)
-	{
-		return (1);
-	}
-	else if (c >= 65 && c <= 90)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (c >= 48 && c <= 57);
 }
