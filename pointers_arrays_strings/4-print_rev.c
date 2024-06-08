@@ -1,10 +1,12 @@
 #include "main.h"
 /**
+ * print_rev - Reverses string
  *
+ * @len: Length of string 
  *
+ * @index: the string
  *
- *
- *
+ * Return: 0
  */
 void print_rev(char *s)
 {
@@ -17,21 +19,4 @@ void print_rev(char *s)
 	_putchar(s[index]);
 
 	_putchar('\n');
-}
-
-/**
- *_strlen - returns the length of a string
- * @s: string
- *Return: returns lenght;
- */
-int _strlen(char *s)
-{
-	int count;
-	int inc;
-
-	inc = 0;
-	for (count = 0; s[count] != '\0'; count++)
-	inc++;
-
-	return (inc);
 }
