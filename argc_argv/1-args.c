@@ -8,6 +8,7 @@
  * Return: Always 0
  */
 int main(int argc, char *argv[])
+	int i;
 {
 	printf("Number of arguments: %d\n", argc - 1);
 
