@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * main - Prints the number of args
@@ -7,7 +6,7 @@
  */
 int main(int argc)
 {
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
