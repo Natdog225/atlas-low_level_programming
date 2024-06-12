@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * malloc_checked - Allocates memory. 
+ * malloc_checked - Allocates memory.
  * @b: int used.
  * Return: ptr
  */
