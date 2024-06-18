@@ -1,9 +1,9 @@
 #include "main.h"
 /**
+ * puts2 - prints every other char in array
+ * @str: A string
  *
- *
- *
- *
+ * Return: 0
  */
 void puts2(char *str)
 {
