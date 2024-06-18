@@ -2,9 +2,9 @@
 #include <stdio.h>
 /**
  * rev_string - Reverses a string
- * @len: Length of str
- * @i: int used
- * @s: Nother int.
+ * @s: int used
+ *
+ *
  *
  * Return: 0
  */
