@@ -4,8 +4,6 @@
  * @s: The string to be printed in reverse.
  */
 
-#include "main.h"
-
 void print_rev(char *s)
 {
 	char *end_ptr = s;
