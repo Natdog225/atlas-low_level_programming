@@ -1,0 +1,1 @@
+This project has to do with struct and typedef modifier
