@@ -3,7 +3,7 @@
 /**
  * rev_string - Reverses a string
  * @len: Length of str
- * @i: int used 
+ * @i: int used
  * @s: Nother int.
  *
  * Return: 0
