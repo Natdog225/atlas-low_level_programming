@@ -4,15 +4,16 @@
  * @s: The string to be printed in reverse.
  */
 
+#include "main.h"
+
 void print_rev(char *s)
 {
-	int len = 0;
-	char *end_ptr;
+	char *end_ptr = s;
 
-	while (*(s + len) != '\0')
-		len++;
+	while (*end_ptr != '\0')
+		end_ptr++;
 
-	end_ptr = s + len - 1;
+	end_ptr--;
 
 	while (end_ptr >= s)
 	{
