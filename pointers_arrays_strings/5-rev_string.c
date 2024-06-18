@@ -1,11 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
+ * rev_string - Reverses a string
+ * @len: Length of str
+ * @i: int used 
+ * @s: Nother int.
  *
- *
- *
- *
- *
+ * Return: 0
  */
 void rev_string(char *s)
 {
