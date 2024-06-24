@@ -19,14 +19,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	// Allocate memory for name and owner strings
 	new_dog->name = malloc(strlen(name) + 1);
 	new_dog->owner = malloc(strlen(owner) + 1);
 
-	// Check if allocations were successful
 	if (new_dog->name == NULL || new_dog->owner == NULL)
 	{
-		// Free any allocated memory
 		if (new_dog->name != NULL)
 		{
 			free(new_dog->name);
@@ -39,10 +36,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	// Copy strings to the allocated memory
 	strcpy(new_dog->name, name);
 	new_dog->age = age;
 	strcpy(new_dog->owner, owner);
 
-	return (new_dog); // Return the newly created dog
-}
+	return (new_dog);
