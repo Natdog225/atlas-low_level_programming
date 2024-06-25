@@ -4,7 +4,7 @@
 /**
  * main - Entry point of the program.
  * @argc: The number of command-line arguments.
- * @argv: An array of strings containing the command-line arguments.
+ * @argv: An array of strings
  *
  * Return: 0 on success, 98 for incorrect number of arguments,
  * 99 for invalid operator, and 100 for division by zero.
