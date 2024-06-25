@@ -3,7 +3,7 @@
  * sum_them_all - Calculates the sum of all integer arguments.
  * @n: The number of arguments to sum.
  *
- * Description: This function takes an unsigned integer 'n' indicating the number
+ * Description: This function takes an unsigned integer 'n' indicating the num
  * If 'n' is 0, it returns 0.
  *
  * Return: The sum of all the provided arguments, or 0 if 'n' is 0.
