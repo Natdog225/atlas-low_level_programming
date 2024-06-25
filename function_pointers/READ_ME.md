@@ -1,0 +1,1 @@
+A project about pointers to functions and other fun things like that. Isn't this the greatest?
