@@ -1,12 +1,12 @@
 #include <stdarg.h>
 #include <stdio.h>
-/** 
+/**
  * print_numbers - prints numbers
  * @separator: the string to print between or NULL
  * @n: number of ints
- * 
- * Description: This function prints numbers separated by the... separator which if null doesn't print
- * 
+ *
+ * Description: This function prints numbers separated
+ *
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
