@@ -52,5 +52,7 @@ while (owner[i] != '\0')
 }
 new_dog->owner[i] = '\0';
 
+new_dog->age = age;
+
 	return (new_dog);
 }
