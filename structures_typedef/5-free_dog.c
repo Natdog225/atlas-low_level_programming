@@ -10,7 +10,7 @@ void free_dog(dog_t *d)
 	if (d == NULL)
 		return;
 
-	free(d->name);	// Free the name string
-	free(d->owner); // Free the owner string
-	free(d);		// Free the dog_t structure itself
+	free(d->name);
+	free(d->owner);
+	free(d);
 }
