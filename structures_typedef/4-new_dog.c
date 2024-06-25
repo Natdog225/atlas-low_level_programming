@@ -10,6 +10,7 @@
  * Return: Pointer to the new dog, or NULL if it's lost.
  */
 dog_t *new_dog(char *name, float age, char *owner)
+int i;
 {
 	dog_t *new_dog = malloc(sizeof(dog_t));
 
@@ -35,15 +36,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	int i = 0;
-while (name[i] != '\0') {
+	i = 0;
+while (name[i] != '\0') 
+{
     new_dog->name[i] = name[i];
     i++;
 }
 new_dog->name[i] = '\0'; 
 
 i = 0;
-while (owner[i] != '\0') {
+while (owner[i] != '\0') 
+{
     new_dog->owner[i] = owner[i];
     i++;
 }
