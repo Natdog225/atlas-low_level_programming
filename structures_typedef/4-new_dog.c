@@ -10,8 +10,8 @@
  * Return: Pointer to the new dog, or NULL if it's lost.
  */
 dog_t *new_dog(char *name, float age, char *owner)
-int i;
 {
+int i;
 	dog_t *new_dog = malloc(sizeof(dog_t));
 
 	if (new_dog == NULL)
