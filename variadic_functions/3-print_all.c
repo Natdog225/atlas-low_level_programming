@@ -25,11 +25,17 @@ void print_all(const char *const format, ...)
 	double f;
 	int d;
 	char c;
+	int first_item = 1;
 
 	va_start(args, format);
 
 	while (format && format[i])
 	{
+		if (!first_item)
+		printf(", ");
+		else
+		first_item = 0;
+
 		switch (format[i])
 		{
 		case 'c':
@@ -50,7 +56,6 @@ void print_all(const char *const format, ...)
 				s = "(nil)";
 			printf("%s", s);
 			break;
-			/* Ignore any other character */
 		}
 		i++;
 	}
