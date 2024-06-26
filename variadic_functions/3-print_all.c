@@ -57,8 +57,8 @@ void print_all(const char *const format, ...)
 			break;
 		}
 		i++;
-		if (printed_something && format[i] != '\0') 
-            printf(", ");
+		if (printed_something && format[i] != '\0')
+			printf(", ");
 	}
 
 	va_end(args);
