@@ -10,12 +10,12 @@
  *
  * Return: Pointer to the new dog, or NULL if it's lost.
  */
-dog_t *new_dog(const char *name, float age, const char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog = malloc(sizeof(dog_t));
 	if (!new_dog)
 	{
-		return NULL; // Handle memory allocation failure
+		return NULL;
 	}
 
 	new_dog->name = malloc(_strlen(name) + 1);
@@ -23,7 +23,7 @@ dog_t *new_dog(const char *name, float age, const char *owner)
 
 	if (!new_dog->name || !new_dog->owner)
 	{
-		free(new_dog->name); // Free what was allocated
+		free(new_dog->name);
 		free(new_dog->owner);
 		free(new_dog);
 		return NULL;
