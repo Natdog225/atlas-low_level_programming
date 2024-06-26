@@ -25,17 +25,11 @@ void print_all(const char *const format, ...)
 	double f;
 	int d;
 	char c;
-	int first_item = 1;
 
 	va_start(args, format);
 
 	while (format && format[i])
 	{
-		if (!first_item)
-		printf(", ");
-		else
-		first_item = 0;
-
 		switch (format[i])
 		{
 		case 'c':
@@ -58,6 +52,8 @@ void print_all(const char *const format, ...)
 			break;
 		}
 		i++;
+		if (format[i] != '\0') 
+            printf(", ");
 	}
 
 	va_end(args);
