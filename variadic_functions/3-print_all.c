@@ -25,6 +25,7 @@ void print_all(const char *const format, ...)
 	double f;
 	int d;
 	char c;
+	int printed_something = 0;
 
 	va_start(args, format);
 
@@ -35,24 +36,28 @@ void print_all(const char *const format, ...)
 		case 'c':
 			c = va_arg(args, int);
 			printf("%c", c);
+			printed_something = 1;
 			break;
 		case 'i':
 			d = va_arg(args, int);
 			printf("%d", d);
+			printed_something = 1;
 			break;
 		case 'f':
 			f = va_arg(args, double);
 			printf("%f", f);
+			printed_something = 1;
 			break;
 		case 's':
 			s = va_arg(args, char *);
 			if (s == NULL)
 				s = "(nil)";
 			printf("%s", s);
+			printed_something = 1;
 			break;
 		}
 		i++;
-		if (format[i] != '\0') 
+		if (printed_something && format[i] != '\0') 
             printf(", ");
 	}
 
