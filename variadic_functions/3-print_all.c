@@ -59,6 +59,7 @@ void print_all(const char *const format, ...)
 		i++;
 		if (printed_something && format[i] != '\0')
 			printf(", ");
+			 printed_something = 0;
 	}
 
 	va_end(args);
