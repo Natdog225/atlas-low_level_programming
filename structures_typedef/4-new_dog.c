@@ -1,4 +1,5 @@
 #include "dog.h"
+#include "main.h"
 #include <string.h>
 
 /**
@@ -9,62 +10,28 @@
  *
  * Return: Pointer to the new dog, or NULL if it's lost.
  */
-dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(const char *name, float age, const char *owner)
 {
-	int i;
-	int name_len = 0;
-	int owner_len = 0;
 	dog_t *new_dog = malloc(sizeof(dog_t));
-
-	if (new_dog == NULL)
+	if (!new_dog)
 	{
-		return (NULL);
+		return NULL; // Handle memory allocation failure
 	}
 
-	while (name[name_len] != '\0')
-	{
-		name_len++;
-	}
+	new_dog->name = malloc(_strlen(name) + 1);
+	new_dog->owner = malloc(_strlen(owner) + 1);
 
-	while (owner[owner_len] != '\0')
+	if (!new_dog->name || !new_dog->owner)
 	{
-		owner_len++;
-	}
-
-	new_dog->name = malloc(name_len + 1);
-	new_dog->owner = malloc(owner_len + 1);
-	
-	if (new_dog->name == NULL || new_dog->owner == NULL)
-	{
-		if (new_dog->name != NULL)
-		{
-			free(new_dog->name);
-		}
-		if (new_dog->owner != NULL)
-		{
-			free(new_dog->owner);
-		}
+		free(new_dog->name); // Free what was allocated
+		free(new_dog->owner);
 		free(new_dog);
-		return (NULL);
+		return NULL;
 	}
 
-	i = 0;
-	while (name[i] != '\0')
-	{
-		new_dog->name[i] = name[i];
-		i++;
-	}
-	new_dog->name[i] = '\0';
-
-	i = 0;
-	while (owner[i] != '\0')
-	{
-		new_dog->owner[i] = owner[i];
-		i++;
-	}
-	new_dog->owner[i] = '\0';
-
+	_strcpy(new_dog->name, name);
+	_strcpy(new_dog->owner, owner);
 	new_dog->age = age;
 
-	return (new_dog);
+	return new_dog;
 }
