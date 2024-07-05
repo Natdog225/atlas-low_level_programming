@@ -2,6 +2,24 @@
 #include <string.h> /* Include for strdup function */
 
 /**
+ * _strlen - Calculates the length of a string.
+ * @str: Pointer to the string.
+ *
+ * Return: The length of the string.
+ */
+unsigned int _strlen(const char *str)
+{
+	unsigned int length = 0;
+
+	while (*str != '\0')
+	{
+		length++;
+		str++;
+	}
+
+	return (length);
+}
+/**
  * add_node - Adds a new node at the beginning of a list_t list.
  * @head: Pointer to a pointer to the head of the list.
  * @str: String to be duplicated and stored in the new node.
@@ -10,9 +28,8 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node; /* Declare a pointer for the new node */
+	list_t *new_node;
 
-	/* Allocate memory for the new node */
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 	{
@@ -26,7 +43,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	new_node->len = strlen(new_node->str);
+	new_node->len = _strlen(new_node->str);
 
 	new_node->next = *head;
 
