@@ -1,8 +1,18 @@
 #ifndef LIST_H
 #define LIST_H
+#include <stdio.h>
+#include <stddef.h>
 size_t list_len(const list_t *h);
 size_t print_list(const list_t *h);
 typedef struct list_s
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
 {
 	char *str;
 	unsigned int len;
