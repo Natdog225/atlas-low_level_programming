@@ -10,7 +10,6 @@ size_t list_len(const list_t *h)
 {
 	size_t element_count = 0;
 
-	/* Traverse the list until the end (NULL pointer) is reached */
 	while (h != NULL)
 	{
 		element_count++;
