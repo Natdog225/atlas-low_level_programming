@@ -10,7 +10,7 @@ int pop_listint(listint_t **head)
     listint_t *temp;
     int data;
 
-    if (*head == NULL) /* Check if the list is empty */
+    if (*head == NULL)
         return 0;
 
     temp = *head;     /* Store the head node to be deleted */
@@ -18,5 +18,5 @@ int pop_listint(listint_t **head)
     *head = temp->next; /* Update the head to point to the next node */
     free(temp);       /* Free the memory of the deleted head node */
 
-    return data;      /* Return the extracted data */
+    return data;
 }
