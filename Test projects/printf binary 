@@ -1,0 +1,91 @@
+#include "main.h"
+#include <stdio.h>	
+#include <stdarg.h>
+#include <stdlib.h>
+#include <limits.h>
+
+
+
+int _printf(const char *format, ...)
+{
+	va_list args;
+	int printed_chars = 0;
+
+	va_start(args, format);
+
+	while (*format)
+	{
+		if (*format == '%')
+		{
+			format++; /* Move character */
+
+			/* Handle format specifiers */
+			switch (*format)
+			{
+			case 'c':
+			{
+				char c = va_arg(args, int);
+				putchar(c);
+				printed_chars++;
+				break;
+			}
+
+			case 's':
+			{
+				char *str = va_arg(args, char *);
+				while (*str)
+				{
+					putchar(*str++);
+					printed_chars++;
+				}
+				break;
+			}
+
+			case '%':
+				putchar('%');
+				printed_chars++;
+				break;
+
+			case 'd':
+			case 'i':
+			{
+				int num = va_arg(args, int);
+				char buffer[20];
+				printed_chars += sprintf(buffer, "%d", num);
+				fputs(buffer, stdout);
+				break;
+			}
+
+			case 'b':
+			{ 
+				unsigned int num = va_arg(args, unsigned int);
+				if (num == 0)
+				{
+					putchar('0');
+					printed_chars++;
+				}
+				else
+				{
+					print_binary(num, &printed_chars);
+				}
+				break;
+			}
+
+
+			default:
+				putchar('%');
+				putchar(*format);
+				printed_chars += 2;
+			}
+		}
+		else
+		{
+			putchar(*format);
+			printed_chars++;
+		}
+		format++;
+	}
+
+	va_end(args);
+	return printed_chars;
+}
