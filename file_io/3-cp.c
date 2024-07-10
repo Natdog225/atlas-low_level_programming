@@ -30,3 +30,10 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
+	dest_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0644);
+	if (dest_fd == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		close(source_fd);
+		exit(99);
+	}
