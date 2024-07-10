@@ -3,9 +3,9 @@
 #define BUFFER_SIZE 1024
 
 /**
- * main - Copies the content of a file to another file.
+ * main - Copies the content of a file to another file
  * @argc: The number of command-line arguments.
- * @argv: An array of strings containing the arguments.
+ * @argv: An array of strings containing the arguments
  *
  * Return: 0 on success, 97, 98, 99, or 100 on specific errors SPECIFIC ONES
  */
