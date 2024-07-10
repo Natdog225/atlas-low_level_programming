@@ -1,9 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
-
 #define BUFFER_SIZE 1024
 
 /**
@@ -11,7 +6,7 @@
  * @argc: The number of command-line arguments.
  * @argv: An array of strings containing the arguments.
  *
- * Return: 0 on success, 97, 98, 99, or 100 on specific errors.
+ * Return: 0 on success, 97, 98, 99, or 100 on specific errors SPECIFIC ONES
  */
 int main(int argc, char *argv[])
 {
@@ -55,3 +50,18 @@ int main(int argc, char *argv[])
 		close(dest_fd);
 		exit(98);
 	}
+	if (close(source_fd) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", source_fd);
+		close(dest_fd);
+		exit(100);
+	}
+
+	if (close(dest_fd) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dest_fd);
+		exit(100);
+	}
+
+	return (0);
+}
