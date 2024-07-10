@@ -15,12 +15,18 @@
  */
 int main(int argc, char *argv[])
 {
-    int source_fd, dest_fd;
-    ssize_t bytes_read, bytes_written;
-    char buffer[BUFFER_SIZE];
+	int source_fd, dest_fd;
+	ssize_t bytes_read, bytes_written;
+	char buffer[BUFFER_SIZE];
 
-    if (argc != 3)
-    {
-        dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-        exit(97);
-    }
+	if (argc != 3)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+	source_fd = open(argv[1], O_RDONLY);
+	if (source_fd == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
