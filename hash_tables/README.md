@@ -1,0 +1,1 @@
+This is about hash tables and none of it is the good kind of hash.
