@@ -1,0 +1,1 @@
+This project has to do with static variables and how to use them. In this instance, keeping track of the laps done by these digital cars. What an exciting race. 
